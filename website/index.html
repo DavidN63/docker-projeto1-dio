@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>David Carlos</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(90deg, #0078d7, #005ea2);
+      color: white;
+      padding: 20px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    header nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+    }
+
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 25px;
+    }
+
+    header ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    header ul li a:hover {
+      color: #ffcc00;
+    }
+
+    main {
+      max-width: 1100px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 60px;
+      background: white;
+      padding: 30px 40px;
+      border-radius: 8px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.05);
+    }
+
+    section h2 {
+      margin-bottom: 20px;
+      color: #0078d7;
+      border-bottom: 3px solid #0078d7;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    section p {
+      font-size: 1.1rem;
+      color: #555;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      padding: 12px 25px;
+      background-color: #0078d7;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: 700;
+      margin-top: 20px;
+      transition: background-color 0.3s;
+    }
+
+    .btn-primary:hover {
+      background-color: #005ea2;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px 0;
+      color: #777;
+      font-size: 14px;
+      border-top: 1px solid #ddd;
+      background: #fafafa;
+    }
+
+    /* Responsividade */
+    @media (max-width: 768px) {
+      header nav {
+        flex-direction: column;
+        gap: 15px;
+      }
+      header ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+      main {
+        margin: 20px auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <h1>David Carlos</h1>
+      <ul>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2>Sobre Mim</h2>
+      <p>Sou David Carlos, profissional apaixonado por tecnologia com foco em desenvolvimento backend e automação de ambientes. Tenho experiência em Java, Python e C#, e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.</p>
+      <p>Atualmente, dedico-me ao desenvolvimento de soluções eficientes e escaláveis, utilizando Docker para orquestração de containers e Apache para servidores web. Valorizo boas práticas de programação e o trabalho colaborativo para entregar projetos de qualidade.</p>
+      <p>Se quiser conhecer mais sobre minha trajetória e conexões profissionais, <a href="https://www.linkedin.com/in/david-cdn/" target="_blank" rel="noopener noreferrer">clique aqui para visitar meu LinkedIn</a>.</p>
+      <a href="#contato" class="btn-primary">Fale comigo</a>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 David Carlos. Todos os direitos reservados.
+  </footer>
+</body>
+</html>
